@@ -1,6 +1,6 @@
 {
   "name": "craco",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "high level api for interacting with webpack config",
   "keywords": [
     "async",
