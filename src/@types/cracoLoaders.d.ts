@@ -4,6 +4,7 @@ declare module '@craco/craco' {
     Loader as WebpackLoader,
     Configuration as WebpackConfig
   } from 'webpack';
+
   export type Matcher = (f: any) => any;
   export function loaderByName(
     targetLoaderName: string,
