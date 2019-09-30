@@ -1,11 +1,27 @@
 declare module '@craco/craco' {
+  import { TransformOptions as BabelOptions } from '@babel/core';
   import {
     Rule as WebpackRule,
     Loader as WebpackLoader,
     Configuration as WebpackConfig
   } from 'webpack';
 
-  export interface CracoConfig {}
+  export type BabelOptions = BabelOptions;
+  export type WebpackConfig = WebpackConfig;
+  export type WebpackLoader = WebpackLoader;
+  export type WebpackRule = WebpackRule;
+  export interface EslintOptions {
+    [key: string]: any;
+  }
+  export interface TypeScriptOptions {
+    [key: string]: any;
+  }
+  export interface CracoConfig {
+    babel?: BabelOptions;
+    eslint?: EslintOptions;
+    typescript?: TypeScriptOptions;
+    webpack?: WebpackConfig;
+  }
   export type Matcher = (f: any) => any;
   export function loaderByName(
     targetLoaderName: string
