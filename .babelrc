@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "jam",
+      {
+        "targets": {
+          "node": "6"
+        }
+      }
+    ],
+    "@babel/typescript"
+  ]
+}
