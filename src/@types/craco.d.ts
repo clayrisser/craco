@@ -5,10 +5,10 @@ declare module '@craco/craco' {
     Configuration as WebpackConfig
   } from 'webpack';
 
+  export interface CracoConfig {}
   export type Matcher = (f: any) => any;
   export function loaderByName(
-    targetLoaderName: string,
-    matcher: Matcher
+    targetLoaderName: string
   ): (rule: WebpackRule) => any;
   export function getLoader(
     webpackConfig: WebpackConfig,
