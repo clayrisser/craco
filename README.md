@@ -5,6 +5,8 @@
 
 > high level api for interacting with webpack config
 
+![](assets/craco.png)
+
 ## Features
 
 - supports webpack v4
